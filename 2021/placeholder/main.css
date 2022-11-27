@@ -1,0 +1,101 @@
+@font-face { 
+	font-family: "Larke"; 
+	src: url("/assets/Larke-Sans-Bold.ttf");
+}
+
+html {
+	overflow-x: clip;
+}
+
+body {
+	background: #ffffff;
+	margin: 0;
+	display: flex;
+	height: 100vh;
+	min-height: 600px;
+	overflow-x: clip;
+}
+
+h1 { 
+	font-family: "Larke", sans-serif;
+	font-weight: 600;
+	font-size: 3.75em; 
+
+	letter-spacing: -.5px;
+	line-height: .8em;
+}
+
+p {
+	font-family: sans-serif;
+	font-weight: 300;
+	font-size: 1em;
+	line-height: 1.5em;
+	
+}
+
+main {
+	margin: auto;
+}
+
+#content {
+	font-family: sans-serif;
+
+	background: linear-gradient(to top right, #fbcb75, #fff5a4);
+	color: white;
+
+	border-radius: 24px;
+	width: 90%;
+	max-width: 900px;
+	box-sizing: border-box;
+
+	margin: auto;
+	padding: 100px 75px 50px 75px;
+
+}
+
+#avatar {
+	display: inline-block;
+	float: right;
+	margin-top: -48px;
+	margin-right: -32px;
+	filter: contrast(.6) saturate(2) brightness(1.2);
+
+	max-width: 256px;
+	width: 40%;
+	border-radius: 50%;
+
+}
+
+span.highlight {
+	font-weight: bold;
+	font-style: italic;
+}
+
+#socials { 
+	list-style: none;
+	display: block;
+	text-align: right;
+}
+
+#socials li {
+	display: inline-block;
+}
+
+#socials img {
+	width: 28px;
+	padding: 0 8px;
+	filter: brightness(0) invert(1);
+}
+
+/* Responsive Changes */
+@media(max-width: 1170px) {
+	#content {
+		padding-left: 5%;
+		padding-right: 5%;
+		margin: 0 5% 0 5%;
+	}
+	#avatar {
+		margin-top: -32px;
+		margin-right: -16px;
+	}
+}

@@ -1,0 +1,34 @@
+@font-face {
+    font-family: 'Abril Fatface';
+    src: url('/assets/fonts/abrilfatface-regular-webfont.woff2') format('woff2'),
+         url('/assets/fonts/abrilfatface-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: serif;
+
+}
+
+@font-face {
+    font-family: 'Rubik';
+    src: url('/assets/fonts/rubik-bold-webfont.woff2') format('woff2'),
+         url('/assets/fonts/rubik-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: sans-serif;
+
+}
+
+@font-face {
+    font-family: 'Literata';
+    src: url('/assets/fonts/literatabook-webfont.woff2') format('woff2'),
+         url('/assets/fonts/literatabook-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: cursive;
+}
+
+@font-face {
+    font-family: 'Literata';
+    src: url('literatabook-bold-webfont.woff2') format('woff2'),
+         url('literatabook-bold-webfont.woff') format('woff');
+    font-weight: bold;
+    font-style: cursive;
+
+}

@@ -1,0 +1,203 @@
+@font-face {
+  font-family: "Abril Fatface";
+  src: url("/assets/fonts/abrilfatface-regular-webfont.woff2") format("woff2"), url("/assets/fonts/abrilfatface-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: serif;
+}
+@font-face {
+  font-family: "Rubik";
+  src: url("/assets/fonts/rubik-bold-webfont.woff2") format("woff2"), url("/assets/fonts/rubik-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: sans-serif;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("/assets/fonts/literatabook-webfont.woff2") format("woff2"), url("/assets/fonts/literatabook-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: cursive;
+}
+@font-face {
+  font-family: "Literata";
+  src: url("literatabook-bold-webfont.woff2") format("woff2"), url("literatabook-bold-webfont.woff") format("woff");
+  font-weight: bold;
+  font-style: cursive;
+}
+html {
+  min-height: 100%;
+  background: #eff0f1ff;
+  color: #323232ff;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: "Literata", serif;
+}
+
+header {
+  display: flex;
+  flex-flow: column;
+  margin-bottom: 20px;
+}
+header h1 {
+  text-align: center;
+  margin: 25px 0 5px 0;
+}
+@media (max-width: 708px) {
+  header h1 {
+    order: 2;
+    margin-bottom: 45px;
+  }
+  header nav {
+    order: 1;
+    margin-bottom: 30px;
+  }
+}
+
+h1, h2 {
+  font-family: "Abril Fatface", cursive;
+  font-size: 36px;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+nav {
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  display: flex;
+  flex-flow: column;
+}
+nav ul {
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  padding: 0;
+  margin: 0 auto;
+  text-align: center;
+}
+nav li {
+  font-size: 16px;
+  letter-spacing: 5px;
+  padding: 0 10px;
+  font-family: "Rubik", sans-serif;
+  font-weight: bold;
+}
+nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+nav input {
+  cursor: pointer;
+  position: relative;
+  text-align: center;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+nav label {
+  cursor: pointer;
+  text-align: center;
+  font-family: "Abril Fatface", cursive;
+  font-weight: bold;
+  font-size: 24px;
+}
+nav hr {
+  width: 70%;
+  max-width: 320px;
+  margin: 5px auto;
+}
+nav input, nav label {
+  display: none;
+}
+@media (max-width: 708px) {
+  nav ul {
+    flex-flow: column;
+    margin-top: 15px;
+  }
+  nav ul li a {
+    line-height: 50px;
+  }
+  nav input, nav label {
+    display: block;
+  }
+  nav input:not(:checked) ~ ul {
+    display: none;
+  }
+}
+
+main {
+  min-width: 350px;
+  max-width: 700px;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  align-items: flex-start;
+  box-sizing: border-box;
+  border: 2px solid #323232ff;
+  border-top: none;
+  border-bottom: none;
+}
+main div {
+  box-sizing: border-box;
+  padding: 15px;
+}
+
+#content {
+  flex: 1 0;
+  min-width: 350px;
+}
+@media (min-width: 709px) {
+  #content {
+    border-right: 3px dashed #323232ff;
+  }
+}
+#content .article-title {
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+#widgets {
+  flex: 0 1 205px;
+}
+@media (max-width: 708px) {
+  #widgets {
+    display: none;
+  }
+}
+#widgets .widget {
+  display: block;
+  cursor: pointer;
+  border: 3px dashed #323232ff;
+  border-radius: 16px;
+  min-width: 182.5px;
+  max-width: 182.5px;
+}
+#widgets .widget h3 {
+  vertical-align: top;
+  margin: 0;
+  line-height: 1em;
+}
+#widgets .widget h1 {
+  vertical-align: bottom;
+  line-height: 0.95em;
+  margin: 25px 0 0 0;
+}
+#widgets a {
+  color: inherit;
+  text-decoration: none;
+  cursor: initial;
+}
+#widgets .widget:hover {
+  background-color: rgba(255, 255, 255, 0.75);
+}
+
+/*# sourceMappingURL=main.css.map */
