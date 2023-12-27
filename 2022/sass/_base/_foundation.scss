@@ -1,0 +1,26 @@
+@font-face {
+  font-family: 'Nunito';
+  src: local('Nunito'), url('/assets/fonts/nunito/static/Nunito-Regular.ttf');
+  font-style: "regular";
+  font-weight: 400;
+} 
+
+html {
+  background-color: $background_color;
+  color: $foreground_color;
+  margin: 0;
+  padding: 0;
+  overflow-y: hidden;
+  overflow-x: none;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  font-family: $base_font;
+  user-select: none;
+  height: 100%;
+  position: fixed;
+  overflow-y: scroll;
+}

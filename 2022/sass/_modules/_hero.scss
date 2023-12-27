@@ -1,0 +1,39 @@
+@keyframes wave {
+  0%,100%,35%,60% {
+    transform: rotate(0) scaleX(-1);
+  }
+  40%,50% {
+    transform: rotate(-20deg) scaleX(-1);
+  }
+  55%,45% {
+    transform: rotate(20deg) scaleX(-1);
+  }
+}
+
+header {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  background-image: url("/assets/img/hero.jpg");
+  background-size: cover;
+//  filter: grayscale(0.5);
+  h1 {
+    margin: auto;
+    display: inline-block;
+    font-size: 2.5em;
+    color: $background-color;
+//    text-shadow: -1px 1px 0 $foreground-color, 1px 1px 0 $foreground-color, 1px -1px 0 $foreground-color, -1px -1px 0 $foreground-color;
+  }
+
+  span {
+    margin-bottom: 0.25em;
+    margin-left: 5px;
+    transform: rotate(0) scaleX(-1);
+    transform-origin: bottom;
+    display: inline-block;
+    animation-name: wave;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+  }
+}

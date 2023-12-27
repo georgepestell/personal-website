@@ -1,0 +1,89 @@
+{
+  "main": {
+    "id": "014e8857cbd640f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "ab0fcb58ee88ff9b",
+        "type": "leaf",
+        "state": {
+          "type": "empty",
+          "state": {}
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "a2ad81031eb87415",
+    "type": "split",
+    "children": [
+      {
+        "id": "7c45882e65f8fbf8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7f7880eacc417e40",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "8fe7029e0e190d84",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "55faeb597fd7d2f1",
+    "type": "split",
+    "children": [
+      {
+        "id": "3cbe2d325acf3a02",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "98bc0c81961c7088",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "ab0fcb58ee88ff9b",
+  "lastOpenFiles": [
+    "1-discovery.md"
+  ]
+}
