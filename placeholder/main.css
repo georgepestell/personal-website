@@ -1,7 +1,4 @@
-@font-face { 
-	font-family: "Larke"; 
-	src: url("/assets/Larke-Sans-Bold.ttf");
-}
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 html {
 	overflow-x: clip;
@@ -17,7 +14,7 @@ body {
 }
 
 h1 { 
-	font-family: "Larke", sans-serif;
+	font-family: "Oswald", sans-serif;
 	font-weight: 600;
 	font-size: 3.75em; 
 
@@ -26,7 +23,7 @@ h1 {
 }
 
 p {
-	font-family: sans-serif;
+	font-family: Arial, Helvetica, sans-serif;
 	font-weight: 300;
 	font-size: 1em;
 	line-height: 1.5em;
@@ -38,32 +35,34 @@ main {
 }
 
 #content {
-	font-family: sans-serif;
+	position: relative;
+	font-family: "Oswald", sans-serif;
 
-	background: linear-gradient(to top right, #fbcb75, #fff5a4);
+	background: linear-gradient(to top right, blue, rgb(219, 140, 250));
 	color: white;
 
 	border-radius: 24px;
-	width: 90%;
+	width: 85%;
 	max-width: 900px;
 	box-sizing: border-box;
-
+	
 	margin: auto;
 	padding: 100px 75px 50px 75px;
 
+	user-select: none;
 }
 
 #avatar {
-	display: inline-block;
-	float: right;
-	margin-top: -48px;
-	margin-right: -32px;
+	display: block;
+	position: absolute;
+	right: -100px;
+	top: -50px;
 	filter: contrast(.6) saturate(2) brightness(1.2);
 
 	max-width: 256px;
 	width: 40%;
 	border-radius: 50%;
-
+	padding-right: 50px;
 }
 
 span.highlight {
