@@ -1,0 +1,3 @@
+[submodule "georgepestell.github.io"]
+	path = georgepestell.github.io
+	url = git@github.com:georgepestell/georgepestell.github.io
